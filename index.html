@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang=" en " xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <!-- Meta Contents -->
+    <meta property="og:title" content="Hack Club ITER">
+    <meta property="og:description" content="The Official Website of Hack Club ITER.">
+    <meta property="og:image" content=",/img/logos/logo-no-bg.png">
+    <meta property="og:url" content="https://iter.hackclub.com">
+    <meta name="keywords" content="Hack Club, Hack Club ITER">
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <!-- Icons and Meta Images -->
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/hackclubiter/cdn/main/logos/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Title -->
+    <title>Projects | Hack Club ITER</title>
+  </head>
+  <body class="home-body">
+    <header class="site-header" role="banner">
+      <div class="navbar-area">
+        <div class="container">
+          <nav class="site-navbar">
+            <a class="site-title" rel="author" href="/">
+              <img src="https://github.com/hackclubiter/cdn/blob/main/logos/logo-no-bg.png?raw=true" href="iter.hackclub.com" width="50px">
+            </a>
+            <ul>
+              <li>
+                <a class="red-link" href="#about">About</a>
+              </li>
+              <li>
+                <a class="red-link" href="/workshops">Workshops</a>
+              </li>
+              <li>
+                <a class="red-link" href="/projects">Projects</a>
+              </li>
+              <li>
+                <a class="red-link" href="./team">Team</a>
+              </li>
+              <li>
+                <a class="red-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <a class="hc-button-small" href="https://iter.hackclub.com/apply">
+              <span style="color: white;">Join us! 🚀</span>
+            </a>
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <script>
+        const navToggler = document.querySelector('.nav-toggler');
+        const navMenu = document.querySelector('.site-navbar ul');
+        const navLinks = document.querySelectorAll('.site-navbar a');
+        const header = document.querySelector('.site-header');
+        allEventListners();
+
+        function allEventListners() {
+          navToggler.addEventListener('click', togglerClick);
+          navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
+        }
+
+        function togglerClick() {
+          navToggler.classList.toggle('toggler-open');
+          navMenu.classList.toggle('open');
+        }
+
+        function navLinkClick() {
+          if (navMenu.classList.contains('open')) {
+            navToggler.click();
+          }
+        }
+      </script>
+    </header>
+    <main class="main-home-content" aria-label="Content" style="z-index: 1;">
+      
+      <div class="wrapper">
+        <div class="home">
+          <div class="resizer1"></div>
+          <h1 class="page-heading"> Welcome to <br>
+            <span class="transparent">Hack&nbsp;Club ITER</span><br>
+            Projects.
+          </h1>
+          <hr>
+          <p style="color: aliceblue; text-align: center; margin-bottom: 2rem; margin-top: 2rem;  ">
+            All the projects built by the members of Hack Club ITER. <br>
+            It fetches all the projects labelled with <strong>hackclubiter</strong> through the <a href="https://github.com">@github</a>'s API.
+          </p>
+          <div class="scroll-down">
+            <a class="scroll-down" href="#projects">
+            <svg class="down-arrowsvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500.847 500.847" stroke="#ffffff" stroke-width="10" xml:space="preserve">
+              <g>
+                <path class="arrow" d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+                c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+                c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+            </svg>
+          </a>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+<main id="projects" class="project-header-area" aria-label="Content" style="background-color:#252429; padding: 5rem 0 5rem 0;">
+      <div class="css-10ynupg">
+        <div class="css-1t5zxyg">
+            <div class="css-zgg4hd" id="mypanel"></div>
+        </div>
+      </div>
+      <div class="totalProjects" id="totalProjects"></div>
+</main>
+    <!-- Footer -->
+    <footer class="rodape_area bg_color">
+      <div class="rodape_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="
+              visibility: visible;
+              animation-delay: 0.4s;
+              animation-name: fadeInLeft;
+            ">
+                <h3 class="f-title f_600 t_color f_size_18">Hack Club ITER</h3>
+                <ul class="list-unstyled f_list" style="margin-left: 0">
+                  <li>
+                    <a href="/#">Workshops</a>
+                  </li>
+                  <li>
+                    <a href="/#">Projects</a>
+                  </li>
+                  <li>
+                    <a href="/code-of-conduct">Code of Conduct</a>
+                  </li>
+                  <li>
+                    <a href="">Discord</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="
+              visibility: visible;
+              animation-delay: 0.6s;
+              animation-name: fadeInLeft;
+            ">
+                <h3 class="f-title f_600 t_color f_size_18">Hack Club</h3>
+                <ul class="list-unstyled f_list" style="margin-left: 0">
+                  <li>
+                    <a href="https://hackclub.com/">Website</a>
+                  </li>
+                  <li>
+                    <a href="https://hackclub.com/press/">Press</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="
+              visibility: visible;
+              animation-delay: 0.8s;
+              animation-name: fadeInLeft;
+            ">
+                <h3 class="f-title f_600 t_color f_size_18">Connect with us!</h3>
+                <div class="f_social_icon">
+                  <a href="https://www.instagram.com/hackclubiter/" class="fab fa-instagram"></a>
+                  <a href="https://twitter.com/hackclubiter" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-discord"></a>
+                  <a href="https://github.com/hackclubiter" class="fab fa-github"></a>
+                  <br>
+                  <a href="https://www.linkedin.com/company/hackclubiter/" class="fab fa-linkedin"></a>
+                </div>
+                <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="
+                visibility: visible;
+                animation-delay: 0.2s;
+                animation-name: fadeInLeft;
+              "></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3 class="f-title f_600 t_color f_size_18">Talk to us!</h3>
+              <a href="mailto:hackclubiter@gmail.com">hackclubiter@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="display: flex; justify-content: center; padding-bottom: 1%; font-size: 15px;">&#169 Hack Club ITER 2021</p>
+    </footer>
+    <!-- Custom Scripts -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
