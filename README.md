@@ -7,6 +7,7 @@
 
 The project page for Hack Club ITER is designed to show the projects made by the Hack Clubber of ITER and encourage other to build and ship their projects.
 [@saswatsamal](https://github.com/saswatsamal) have built this project with the help of @github's RestAPI. So, whenever someone adds **hackclubiter** as the tag in their repo, the [website](iter.hackclub.com/projects) will automatically render it. 
+(The sorting is based on the number of stars.)
 
 ### What it displays?
 
